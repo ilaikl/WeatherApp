@@ -1,0 +1,115 @@
+
+body{
+    /* display: grid; */
+    /* height:100vh; */
+    background-color: white;
+    /* grid-template-rows: 1fr 3fr; */
+    font-family: sans-serif;
+}
+#currentCity{
+    position: fixed;
+    height: 50vh;
+    width: 100vw;
+    background-color: #a2e2d4;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 15px;
+    border-bottom: white solid 15px;
+}
+
+#currentCity .cityName{
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    margin: 0;
+    font-weight: bold;
+    font-size: 17vw;
+    color: white;
+}
+
+#currentCity .cityTemp{
+    top: 30vh;
+    left: 30vw;
+    margin: 0;
+    position: absolute;
+    font-size: 14vw;
+    color: white;
+}
+#currentCity .cityTemp span{
+    position: absolute;
+    font-size: 7vw;
+    top: 10px;
+}
+#currentCity .cityTemp img{
+    height: 15vh;
+}
+
+
+#userInput{
+    width: 80vw;
+    z-index: 2;
+    margin: auto;
+    padding: 15px;
+
+}
+#city-input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 3px solid white ;
+    font-size: 5vw;
+    color: white;
+    
+}
+#saveCityBtn{
+    background: transparent;
+    border: none;
+    margin: 0 auto;
+    color: white;
+    font-size: 5vw;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 47vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#getCityBtn{
+    background: transparent;
+    color: white;
+    font-size: 5vw;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+#cityList{
+    position: relative;
+    top: 50vh;
+    
+    margin: 15px;
+    padding: 15px;
+}
+
+.cityListBox{
+    background-color: white;
+    border-bottom: 3px solid #a2e2d4 ;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fa-trash{
+    color: red;
+    float: right;
+    margin-right: 35px;
+}
+.cityListBox p{
+    /* color: #a2e2d4; */
+    text-align: center;
+    font-size: 2.3vw;
+}
+
