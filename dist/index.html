@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Weather App</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="currentCity">
+
+    <div id="userInput">
+      
+      <input type="text" id="city-input" placeholder="Search City">
+      <button id="getCityBtn" onclick=handleSearch()><i class="fa fa-search"></i></button>
+      
+    </div>
+
+    <div id="cityData"></div>
+    <br>
+    <button id="saveCityBtn" onclick=saveCity()>Save City To Favorites</button>
+  </div>
+
+  
+  <div id="cityList"></div>  
+
+  <script src="./jquery/dist/jquery.js"></script>
+  <script src="logic.js"></script>
+  <script src="render.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
